@@ -208,7 +208,7 @@ document.addEventListener('DOMContentLoaded', function() {
             projectElement.classList.add('project-item');
             projectElement.innerHTML = `
                 <h3>
-                    <a href="${project.url}" target="_blank" rel="noopener> 
+                    <a href="${project.url}" target="_blank" rel="noopener"> 
                         ${project.title}
                     </a>
                 </h3>
@@ -248,7 +248,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 <i class="fab fa-linkedin"></i>
                 <div class="contact-details">
                     <h3>
-                        <a href="https://www.linkedin.com/in/demi-fashemo/" target="_blank" rel="noopener>
+                        <a href="https://www.linkedin.com/in/demi-fashemo/" target="_blank" rel="noopener">
                             LinkedIn
                         </a>
                     </h3>
