@@ -28,7 +28,6 @@ body {
     padding: 0 20px;
 }
 
-/* Header */
 header {
     background-color: var(--dark-color);
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
@@ -71,7 +70,6 @@ nav ul li a:hover {
     color: var(--accent-color);
 }
 
-/* intro Section */
 .intro {
     height: 100vh;
     background: linear-gradient(rgba(15, 23, 42, 0.9), rgba(30, 58, 138, 0.8));
@@ -139,7 +137,6 @@ nav ul li a:hover {
     background-color: rgba(255, 255, 255, 0.1);
 }
 
-/* Sections */
 section {
     padding: 80px 0;
 }
@@ -163,7 +160,6 @@ section {
     background-color: var(--accent-color);
 }
 
-/* About Section */
 .about {
     background-color: var(--dark-color);
 }
@@ -189,7 +185,6 @@ section {
     max-width: 600px;
 }
 
-/* Experience Section */
 .experience {
     background-color: var(--secondary-color);
 }
@@ -280,7 +275,6 @@ section {
     display: block;
 }
 
-/* Skills Section */
 .skills {
     background-color: var(--dark-color);
 }
@@ -338,7 +332,6 @@ section {
     margin-bottom: 30px;
 }
 
-/* Projects Section */
 .projects {
     background-color: var(--dark-color);
 }
@@ -419,7 +412,6 @@ section {
     display: block;
 }
 
-/* Contact Section */
 .contact {
     background-color: var(--dark-color);
 }
@@ -505,7 +497,6 @@ section {
     color: white;
 }
 
-/* Footer */
 footer {
     background-color: var(--dark-color);
     color: #fff;
@@ -514,7 +505,6 @@ footer {
     border-top: 1px solid var(--primary-color);
 }
 
-/* Media Queries */
 @media screen and (max-width: 992px) {
     .container {
         width: 95%;

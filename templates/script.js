@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 title: 'Mentor',
                 company: 'Curious Cardinals',
                 duration: 'April 2025 - Present',
-                description: '•	Mentor elementary, middle, and high school students through customized, project-based learning experiences in product design, AI, and software development, guiding them in building portfolios and mastering technical tools. •	Foster student growth through age-appropriate instruction, structured goal-setting, and tailored feedback.'
+                description: 'Mentor elementary, middle, and high school students through customized, project-based learning experiences in product design, AI, and software development, guiding them in building portfolios and mastering technical tools. Foster student growth through age-appropriate instruction, structured goal-setting, and tailored feedback.'
 
             },
             {
@@ -72,27 +72,32 @@ document.addEventListener('DOMContentLoaded', function() {
             {
                 title: 'React Weather App',
                 description: 'Built a responsive single-page React application that displays a 5-day weather forecast for any city or the user’s current location (via the Google Browser Geolocation API). •	Developed custom hooks and Context for global state, integrated Google Geocoding & Weather REST endpoints, and implemented unit toggles (°C/ °F), search history, and client-side caching to minimize API calls. Styled with Tailwind CSS and set up deployment on Netlify with environment-secure API key management.',
-                technologies: ['React', 'Axios', 'Tailwind', 'Google Weather API', 'Google Geocoding API', 'Google Browser Geolocation API' ]
+                technologies: ['React', 'Axios', 'Tailwind', 'Google Weather API', 'Google Geocoding API', 'Google Browser Geolocation API' ],
+                url: 'https://demis-react-weather-app.netlify.app/',
             },
             {
                 title: 'InstaLite – Social Media Platform Development',
                 description: 'Co-developed Instagram-inspired social media platform featuring secure user authentication, image uploads with facial embedding matching via ChromaDB, and real-time chat functionality. Engineered personalized content feeds using Apache Spark-powered ranking algorithm, integrating Apache Kafka for posts.',
-                technologies: ['Apache Kafka', 'ChromaDB', 'Apache Spark', 'Amazon S3', 'DynamoDB', 'ChatGPT Integration','etc.' ]
+                technologies: ['Apache Kafka', 'ChromaDB', 'Apache Spark', 'Amazon S3', 'DynamoDB', 'ChatGPT Integration','etc.' ],
+                url: 'https://github.com/dfashemo',
             },
             {
                 title: 'BookBase - Smart Book List Manager',
                 description: 'Developed a full-stack web application for managing book lists with features like book search, reading status tracking, and AI-generated summaries. Implemented using Google Books API for book metadata, Google GenAI API for summaries, SQLite3 for data storage, and the Python Click library for the command line interface.',
-                technologies: ['Python', 'SQLite3', 'Google Books API', 'Google GenAI API', 'Click Library']
+                technologies: ['Python', 'SQLite3', 'Google Books API', 'Google GenAI API', 'Click Library'],
+                url: 'https://github.com/dfashemo/BookBase',
             },
             {
                 title: 'Full-Stack Hangman Game',
                 description: 'Programmed an interactive version of popular computer game using Java and JavaFX for front-end user interface. Implemented backend logic with use of Java Collections, JUnit Components, 2D Arrays, File Input/Output to encapsulate various portions of the game onto an interactive user interface.',
-                technologies: ['Java', 'JavaFX', 'JUnit', 'Java Collections', 'File I/O']
+                technologies: ['Java', 'JavaFX', 'JUnit', 'Java Collections', 'File I/O'],
+                url: 'https://github.com/dfashemo/HangMan',
             },
             {
                 title: 'United to Learn',
                 description: 'Conducted a service project with a non-profit to help underfunded elementary schools combat teacher inconsistency. Interviewed six Dallas Independent School District teachers to discuss unaddressed classroom needs after COVID-19. Created an online curriculum aid that serves as a centralized resource of vetted educational videos for Spanish and English speakers. Led to the temporary implementation of the resource as a guide for substitute teachers in 12 United to Learn partner-elementary schools.',
-                technologies: ['Wix Website Builder']
+                technologies: ['Wix Website Builder'], 
+                url: 'https://github.com/dfashemo',
             }
         ],
         contact: {
@@ -202,7 +207,11 @@ document.addEventListener('DOMContentLoaded', function() {
             const projectElement = document.createElement('div');
             projectElement.classList.add('project-item');
             projectElement.innerHTML = `
-                <h3>${project.title}</h3>
+                <h3>
+                    <a href="${project.url}" target="_blank" rel="noopener> 
+                        ${project.title}
+                    </a>
+                </h3>
                 <p>${project.description}</p>
                 <div class="tech-stack">
                     <h4>Technologies Used:</h4>
@@ -238,15 +247,21 @@ document.addEventListener('DOMContentLoaded', function() {
             <div class="contact-item">
                 <i class="fab fa-linkedin"></i>
                 <div class="contact-details">
-                    <h3>LinkedIn</h3>
-                    <p><a href="${resumeData.contact.linkedin}" target="_blank">${resumeData.contact.linkedin.replace('https://www.linkedin.com/in/demi-fashemo/', '')}</a></p>
+                    <h3>
+                        <a href="https://www.linkedin.com/in/demi-fashemo/" target="_blank" rel="noopener>
+                            LinkedIn
+                        </a>
+                    </h3>
                 </div>
             </div>
             <div class="contact-item">
                 <i class="fab fa-github"></i>
                 <div class="contact-details">
-                    <h3>Github</h3>
-                    <p><a href="${resumeData.contact.github}" target="_blank">${resumeData.contact.github.replace('https://github.com/dfashemo', '')}</a></p>
+                    <h3>
+                        <a href="https://github.com/dfashemo" target="_blank" rel="noopener"> 
+                            Github
+                        </a>
+                    </h3>
                 </div>
             </div>
         `;
