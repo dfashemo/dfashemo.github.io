@@ -1,7 +1,7 @@
 :root {
-    --primary-color: #1e3a8a; /* Dark blue */
+    --primary-color: #7c96dd; /* Dark blue */
     --secondary-color: #0f172a; /* Darker blue */
-    --accent-color: #60a5fa; /* Lighter blue accent */
+    --accent-color: #6ca7ef; /* Lighter blue accent */
     --text-color: #e2e8f0; /* Light text for dark backgrounds */
     --light-color: #334155; /* Medium blue for lighter sections */
     --dark-color: #0f172a; /* Dark blue for dark sections */
@@ -175,7 +175,7 @@ section {
 }
 
 .profile-pic {
-    width: 300px;
+    width: 500px;
     height: 300px;
     border-radius: 50%;
     object-fit: cover;
@@ -186,6 +186,7 @@ section {
 .about-text p {
     margin-bottom: 20px;
     font-size: 1.1rem;
+    max-width: 600px;
 }
 
 /* Experience Section */

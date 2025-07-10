@@ -5,7 +5,9 @@ document.addEventListener('DOMContentLoaded', function() {
                 title: 'SEO Tech Developer Intern',
                 company: 'SEO - Sponsors for Educational Opportunity',
                 duration: 'June 2025 - August 2025',
-                description: 'In progress: '
+                description: 'In progress: Completed 300+ hours of rigorous computer science and software engineering training focused on data structures, algorithms, and full-stack web development. Gained software development skills by working in SCRUM-like teams to design, test, and implement full-stack applications using Python (Flask), MySQL, HTML, JavaScript, CSS, and API integrations.'
+
+
             },
             {
                 title: 'Customer Experience Specialist; Salesperson',
@@ -99,11 +101,11 @@ document.addEventListener('DOMContentLoaded', function() {
             // Logic for company logo
             let logoHtml = '';
             if (job.company.includes('CycleBar')) {
-                logoHtml = `<img src="..images/CYCLEBAR.png" alt="CycleBar Logo" class="company-logo">`;
+                logoHtml = `<img src="../images/CYCLEBAR.png" alt="CycleBar Logo" class="company-logo">`;
             } else if (job.company.includes('Code Ninjas')) {
-                logoHtml = `<img src="..images/CODE NINJAS.jpeg" alt="Code Ninjas Logo" class="company-logo">`;
+                logoHtml = `<img src="../images/CODE NINJAS.jpeg" alt="Code Ninjas Logo" class="company-logo">`;
             } else if (job.company.includes('SEO')) {
-                logoHtml = `<img src="..images/SEO TECH DEV.png" alt="SEO Logo" class="company-logo">`;
+                logoHtml = `<img src="../images/SEO TECH DEV.png" alt="SEO Logo" class="company-logo">`;
             }
             
             jobElement.innerHTML = `
@@ -224,7 +226,14 @@ document.addEventListener('DOMContentLoaded', function() {
                 <i class="fab fa-linkedin"></i>
                 <div class="contact-details">
                     <h3>LinkedIn</h3>
-                    <p><a href="${resumeData.contact.linkedin}" target="_blank">${resumeData.contact.linkedin.replace('https://', '')}</a></p>
+                    <p><a href="${resumeData.contact.linkedin}" target="_blank">${resumeData.contact.linkedin.replace('https://www.linkedin.com/in/demi-fashemo/', '')}</a></p>
+                </div>
+            </div>
+            <div class="contact-item">
+                <i class="fab fa-github"></i>
+                <div class="contact-details">
+                    <h3>Github</h3>
+                    <p><a href="${resumeData.contact.github}" target="_blank">${resumeData.contact.github.replace('https://github.com/dfashemo', '')}</a></p>
                 </div>
             </div>
         `;
