@@ -171,8 +171,9 @@ section {
 }
 
 .profile-pic {
-    width: 400px;
-    height: 400px;
+    width: 100%;
+    max-width: 400px;
+    height: auto;
     border-radius: 50%;
     object-fit: cover;
     border: 4px solid var(--accent-color);
@@ -512,6 +513,15 @@ footer {
     border-top: 1px solid var(--primary-color);
 }
 
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    color: var(--accent-color);
+}
+
+
 @media screen and (max-width: 992px) {
     .container {
         width: 95%;
@@ -523,6 +533,27 @@ footer {
 }
 
 @media screen and (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+    nav ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 70px;  
+        left: 0;
+        width: 100%;
+        background-color: var(--dark-color);
+        padding: 20px 0;
+  }
+  nav ul li {
+        margin: 10px 0;
+        text-align: center;
+  }
+
+  nav ul.active {
+        display: flex;
+  }
     .intro h2 {
         font-size: 2.5rem;
     }
@@ -565,6 +596,10 @@ footer {
     #skills-list,
     #projects-list {
         flex-direction: column;
+    }
+    .skills-column,
+    .projects-column {
+        width: 100%;
     }
 }
 
