@@ -8,6 +8,12 @@ document.addEventListener('DOMContentLoaded', function() {
                 description: 'In progress: Completed 300+ hours of rigorous computer science and software engineering training focused on data structures, algorithms, and full-stack web development. Gained software development skills by working in SCRUM-like teams to design, test, and implement full-stack applications using Python (Flask), MySQL, HTML, JavaScript, CSS, and API integrations.'
 
 
+            },{
+                title: 'Mentor',
+                company: 'Curious Cardinals',
+                duration: 'April 2025 - Present',
+                description: '•	Mentor elementary, middle, and high school students through customized, project-based learning experiences in product design, AI, and software development, guiding them in building portfolios and mastering technical tools. •	Foster student growth through age-appropriate instruction, structured goal-setting, and tailored feedback.'
+
             },
             {
                 title: 'Customer Experience Specialist; Salesperson',
@@ -29,11 +35,11 @@ document.addEventListener('DOMContentLoaded', function() {
             },
             {
                 category: 'Frameworks & Libraries',
-                items: ['React', 'Node.js','Express']
+                items: ['React', 'Node.js']
             },
             {
                 category: 'Cloud & DevOps',
-                items: ['Amazon Web Services (AWS)']
+                items: ['Amazon Web Services (EC2, S3)']
             },
             {
                 category: 'Databases',
@@ -53,7 +59,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 degree: 'Bachelor of Science in Engineering',
                 institution: 'University of Pennsylvania | School of Engineering and Applied Science',
                 duration: '2023 - 2027',
-                description: 'Major: Networked and Social Systems Engineering - a specialized degree program centered around Computer Science, Economics, and Network Theory. Coursework includes: Programming Languages & Techniques I & II, Networked Life, Mathematical Foundations of Computer Science, Scalable & Cloud Computing, Market and Social Systems on the Internet, Microeconomics, and more.'
+                description: 'Major: Networked and Social Systems Engineering - a specialized degree program centered around Computer Science, Economics, and Network Theory. Coursework includes: Programming Languages & Techniques I & II, Networked Life, Mathematical Foundations of Computer Science, Scalable & Cloud Computing, Market and Social Systems on the Internet, Microeconomics, Technological Entrepreneurship, and more.'
             },
             {
                 degree: '',
@@ -63,6 +69,11 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         ],
         projects: [
+            {
+                title: 'React Weather App',
+                description: 'Built a responsive single-page React application that displays a 5-day weather forecast for any city or the user’s current location (via the Google Browser Geolocation API). •	Developed custom hooks and Context for global state, integrated Google Geocoding & Weather REST endpoints, and implemented unit toggles (°C/ °F), search history, and client-side caching to minimize API calls. Styled with Tailwind CSS and set up deployment on Netlify with environment-secure API key management.',
+                technologies: ['React', 'Axios', 'Tailwind', 'Google Weather API', 'Google Geocoding API', 'Google Browser Geolocation API' ]
+            },
             {
                 title: 'InstaLite – Social Media Platform Development',
                 description: 'Co-developed Instagram-inspired social media platform featuring secure user authentication, image uploads with facial embedding matching via ChromaDB, and real-time chat functionality. Engineered personalized content feeds using Apache Spark-powered ranking algorithm, integrating Apache Kafka for posts.',
@@ -106,6 +117,8 @@ document.addEventListener('DOMContentLoaded', function() {
                 logoHtml = `<img src="../images/CODE NINJAS.jpeg" alt="Code Ninjas Logo" class="company-logo">`;
             } else if (job.company.includes('SEO')) {
                 logoHtml = `<img src="../images/SEO TECH DEV.png" alt="SEO Logo" class="company-logo">`;
+            } else if (job.company.includes('Curious Cardinals')) {
+                logoHtml = `<img src="../images/CuriousCardinals.jpeg" alt="Curious Cardinals Logo" class="company-logo">`;
             }
             
             jobElement.innerHTML = `
