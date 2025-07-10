@@ -545,15 +545,21 @@ footer {
         width: 100%;
         background-color: var(--dark-color);
         padding: 20px 0;
-  }
-  nav ul li {
+    }
+    nav ul li {
         margin: 10px 0;
         text-align: center;
-  }
+    }
 
-  nav ul.active {
+    nav ul.active {
         display: flex;
-  }
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background: var(--dark-color);
+    }
     .intro h2 {
         font-size: 2.5rem;
     }
