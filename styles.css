@@ -358,8 +358,15 @@ section {
     margin-bottom: 40px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+.project-item a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    transition: var(--transition);
+}
 
-.project-item:hover {
+.project-item a:hover {
+    color: white;
     transform: translateY(-5px);
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
 }
