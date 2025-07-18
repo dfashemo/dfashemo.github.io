@@ -80,9 +80,15 @@ document.addEventListener('DOMContentLoaded', function() {
         ],
         projects: [
             {
+                title: 'EchoNote',
+                description: 'A full-stack, voice-driven task managemnt app buily with Python Flask. Enables users to record audio in-browser (MediaRecorder API), transcribe it via Google STT and automatically extract actionable tasks using Google Gemini.',
+                technologies: ['Python', 'Flask-SQLAlchemy & SQLite', 'Web Audio API', 'Google Cloud Speech-to-Text API', 'Google Gemini API', 'PythonAnywhere', 'Werkzeug', 'etc.'],
+                url: 'https://ech0n0te.pythonanywhere.com/'
+            },
+            {
                 title: 'React Weather App',
-                description: 'Built a responsive single-page React application that displays a 5-day weather forecast for any city or the user’s current location (via the Google Browser Geolocation API). •	Developed custom hooks and Context for global state, integrated Google Geocoding & Weather REST endpoints, and implemented unit toggles (°C/ °F), search history, and client-side caching to minimize API calls. Styled with Tailwind CSS and set up deployment on Netlify with environment-secure API key management.',
-                technologies: ['React', 'Axios', 'Tailwind', 'Google Weather API', 'Google Geocoding API', 'Google Browser Geolocation API' ],
+                description: 'Built a responsive single-page React application that displays a 5-day weather forecast for any city or the user’s current location (via the Google Browser Geolocation API). Developed custom hooks and Context for global state, integrated Google Geocoding & Weather REST endpoints, and implemented unit toggles (°C/ °F), search history, and client-side caching to minimize API calls. Styled with Tailwind CSS and set up deployment on Netlify with environment-secure API key management.',
+                technologies: ['Python', 'React', 'Axios', 'Tailwind', 'Google Weather API', 'Google Geocoding API', 'Google Browser Geolocation API', 'etc.' ],
                 url: 'https://demis-react-weather-app.netlify.app/',
             },
             {
@@ -94,13 +100,13 @@ document.addEventListener('DOMContentLoaded', function() {
             {
                 title: 'BookBase - Smart Book List Manager',
                 description: 'Developed a full-stack web application for managing book lists with features like book search, reading status tracking, and AI-generated summaries. Implemented using Google Books API for book metadata, Google GenAI API for summaries, SQLite3 for data storage, and the Python Click library for the command line interface.',
-                technologies: ['Python', 'SQLite3', 'Google Books API', 'Google GenAI API', 'Click Library'],
+                technologies: ['Python', 'SQLite3', 'Google Books API', 'Google GenAI API', 'Click Library', 'etc.'],
                 url: 'https://github.com/dfashemo/BookBase',
             },
             {
                 title: 'Full-Stack Hangman Game',
                 description: 'Programmed an interactive version of popular computer game using Java and JavaFX for front-end user interface. Implemented backend logic with use of Java Collections, JUnit Components, 2D Arrays, File Input/Output to encapsulate various portions of the game onto an interactive user interface.',
-                technologies: ['Java', 'JavaFX', 'JUnit', 'Java Collections', 'File I/O'],
+                technologies: ['Java', 'JavaFX', 'JUnit', 'Java Collections', 'File I/O', 'etc.'],
                 url: 'https://github.com/dfashemo/HangMan',
             },
             {
